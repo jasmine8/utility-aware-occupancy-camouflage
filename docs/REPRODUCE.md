@@ -196,6 +196,14 @@ A DOI is what makes the statement strongest, and it takes minutes:
 > archive; `v1.0.2` is the first release whose archived `CITATION.cff` carries both the
 > real affiliation and a resolvable DOI.
 
+> **Third lesson, same day: keep the repository body version-agnostic.** The README
+> banner named the current release (`v1.0.1`), so it had to be edited on every release
+> and was one release behind in each archived snapshot. Any statement about "the
+> current release" inside the repository is stale the moment the next tag is cut. Name
+> only the concept DOI in the repository body; put concrete version numbers in release
+> notes, where they are historical by design. Before tagging, grep the tree for the
+> previous version string and DOI.
+
 ---
 
 ## 7. Publishing to GitHub

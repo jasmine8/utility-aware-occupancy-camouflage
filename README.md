@@ -9,8 +9,9 @@ This repository is the artifact bundle referenced by the manuscript's data-and-c
 availability statement. It contains the **full 9-budget × 16-frame numerical results**
 and the **reconstruction code**, plus every figure and table derived from them.
 
-**Archived release:** v1.0.1 — https://doi.org/10.5281/zenodo.23320736
-(concept DOI, always the latest version: https://doi.org/10.5281/zenodo.23320735)
+**Archived release:** https://doi.org/10.5281/zenodo.23320735 — concept DOI, which
+always resolves to the newest archived version. A version-specific DOI is minted for
+each release; see [§5 Citation](#5-citation).
 
 ---
 
