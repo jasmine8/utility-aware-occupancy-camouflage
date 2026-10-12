@@ -9,6 +9,9 @@ This repository is the artifact bundle referenced by the manuscript's data-and-c
 availability statement. It contains the **full 9-budget × 16-frame numerical results**
 and the **reconstruction code**, plus every figure and table derived from them.
 
+**Archived release:** v1.0.1 — https://doi.org/10.5281/zenodo.23320736
+(concept DOI, always the latest version: https://doi.org/10.5281/zenodo.23320735)
+
 ---
 
 ## 1. What the pilot shows
@@ -180,9 +183,11 @@ their own licenses.
 
 ## 5. Citation
 
-Author: **Mingzhen Li**. Machine-readable metadata is in
-[`CITATION.cff`](CITATION.cff). The manuscript is under review; a DOI will be
-added here on acceptance.
+Author: **Mingzhen Li**. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+
+To cite the released artifacts, use the version DOI **10.5281/zenodo.23320736**
+(v1.0.1); the concept DOI `10.5281/zenodo.23320735` always resolves to the latest
+version. The manuscript is under review; its journal DOI will be added on acceptance.
 
 ## 6. Data availability
 

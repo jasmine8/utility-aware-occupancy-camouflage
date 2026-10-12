@@ -14,7 +14,8 @@ Use this once the GitHub release has been archived on Zenodo (see
 > 9-budget × 16-frame numerical results, and all derived figures and tables are
 > openly available in the `utility-aware-occupancy-camouflage` repository at
 > https://github.com/jasmine8/utility-aware-occupancy-camouflage and are
-> archived at https://doi.org/10.5281/zenodo.&lt;ZENODO_ID&gt;. Code is released under
+> archived at https://doi.org/10.5281/zenodo.23320736 (version v1.0.1; the concept DOI
+> https://doi.org/10.5281/zenodo.23320735 always resolves to the latest version). Code is released under
 > the MIT License and results under CC BY 4.0. The 16 KITTI Velodyne frames used in
 > the pilot are not redistributed (KITTI is distributed under its own non-commercial
 > terms of use); a frame manifest recording the exact byte ranges and a fetch script
@@ -23,11 +24,12 @@ Use this once the GitHub release has been archived on Zenodo (see
 > checkpoint was unavailable from a verifiable source; the audit of that search is
 > included in the repository.
 
-## Variant B — repository, no DOI yet
+## Variant B — repository, no DOI (superseded)
 
-Use this if the DOI is not yet minted. In the MDPI submission form, select
-*"Data available in a publicly accessible repository"* and add the "no DOI yet"
-clause.
+**Not needed for this submission: a DOI now exists, so use Variant A.** Kept only as a
+fallback template in case the DOI ever has to be re-minted. In the MDPI submission
+form, select *"Data available in a publicly accessible repository"* and add the
+"no DOI yet" clause.
 
 > **Data Availability Statement:** The reconstruction code, the complete
 > 9-budget × 16-frame numerical results, and all derived figures and tables are

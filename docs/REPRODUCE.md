@@ -175,7 +175,15 @@ A DOI is what makes the statement strongest, and it takes minutes:
    *Settings → GitHub*.
 4. Publish the GitHub release; Zenodo automatically archives it and mints a DOI.
 5. Paste the DOI into `CITATION.cff`, `DATA_AVAILABILITY.md`, and the manuscript's
-   Data Availability Statement.
+   Data Availability Statement. **Already done for this release:** version DOI
+   `10.5281/zenodo.23320736` (v1.0.1); concept DOI `10.5281/zenodo.23320735`.
+
+> **Release hygiene (learned the hard way in this repository).** Tag each release on a
+> commit that actually differs from the previous one, and keep `version:` in
+> `CITATION.cff` in step with the tag — Zenodo reads that file for the record metadata.
+> Here `v1.0.0` and `v1.0.1` were tagged on the *same* commit, so the two archived
+> snapshots are byte-identical, and an unfilled `affiliation: "TODO"` from
+> `CITATION.cff` propagated into the public Zenodo record.
 
 ---
 
@@ -193,8 +201,9 @@ git push -u origin main
 
 Before pushing, confirm:
 
-- [ ] `CITATION.cff` author fields are filled in (only `affiliation` / `orcid` may remain).
-- [ ] `DATA_AVAILABILITY.md` has the `<ZENODO_ID>` placeholder replaced once the DOI exists.
+- [x] `CITATION.cff` author is filled in. `affiliation` is still `TODO` and **must be
+      fixed in the Zenodo record itself** (record → Edit → Creators) before acceptance.
+- [x] `DATA_AVAILABILITY.md` DOI placeholder replaced — `10.5281/zenodo.23320736`.
 - [ ] No `*.bin` frames are staged (`git status` should show none; `.gitignore` covers them).
 
 ---

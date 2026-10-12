@@ -8,10 +8,13 @@ abstract: >-
   occupancy-based point-cloud reconstruction path. Released artifacts cover a fixed
   16-frame KITTI Velodyne subset across nine removal budgets.
 type: software
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-12"
 license: MIT
 repository-code: "https://github.com/jasmine8/utility-aware-occupancy-camouflage"
+# Archived release. `doi` is the version DOI of v1.0.1; the concept DOI
+# 10.5281/zenodo.23320735 always resolves to the latest version.
+doi: "10.5281/zenodo.23320736"
 keywords:
   - point clouds
   - model inversion
