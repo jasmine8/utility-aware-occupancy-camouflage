@@ -186,9 +186,10 @@ their own licenses.
 Author: **Mingzhen Li**, School of Software, Henan University of Engineering, Zhengzhou
 451191, China. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
-To cite the released artifacts, use the version DOI **10.5281/zenodo.23320736**
-(v1.0.1); the concept DOI `10.5281/zenodo.23320735` always resolves to the latest
-version. The manuscript is under review; its journal DOI will be added on acceptance.
+To cite the released artifacts, use DOI **10.5281/zenodo.23320735**, which always
+resolves to the newest archived version (currently **v1.0.2**). A version-specific DOI
+is minted for each release — e.g. `10.5281/zenodo.23320736` for v1.0.1. The manuscript
+is under review; its journal DOI will be added on acceptance.
 
 ## 6. Data availability
 

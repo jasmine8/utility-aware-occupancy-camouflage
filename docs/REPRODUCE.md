@@ -175,20 +175,26 @@ A DOI is what makes the statement strongest, and it takes minutes:
    *Settings → GitHub*.
 4. Publish the GitHub release; Zenodo automatically archives it and mints a DOI.
 5. Paste the DOI into `CITATION.cff`, `DATA_AVAILABILITY.md`, and the manuscript's
-   Data Availability Statement. **Already done for this release:** version DOI
-   `10.5281/zenodo.23320736` (v1.0.1); concept DOI `10.5281/zenodo.23320735`.
+   Data Availability Statement. **Already done for this release:** the concept DOI
+   `10.5281/zenodo.23320735` always resolves to the newest archived version
+   (`v1.0.2`); the version-specific DOI of `v1.0.1` is `10.5281/zenodo.23320736`.
+
+> **Why the concept DOI is used in the files.** A version DOI only exists *after*
+> Zenodo ingests the release, so a file inside the archive can never contain its own
+> version DOI — using it would guarantee a stale reference in every snapshot. The
+> concept DOI breaks that loop: it is stable and always resolves to the latest
+> version. Keep version DOIs in prose (release notes, the statement of record) and
+> the concept DOI in machine-readable metadata.
 
 > **Release hygiene (learned the hard way in this repository).** Tag each release on a
 > commit that actually differs from the previous one, and keep `version:` in
 > `CITATION.cff` in step with the tag — Zenodo reads that file for the record metadata.
 > Here `v1.0.0` and `v1.0.1` were tagged on the *same* commit, so the two archived
 > snapshots are byte-identical, and an unfilled `affiliation: "TODO"` from
-> `CITATION.cff` propagated into the public Zenodo record. The `affiliation` field is
-> filled in the working tree (`School of Software, Henan University of Engineering,
-> Zhengzhou 451191, China`) but **the archived snapshots cannot be rewritten** — the
-> v1.0.1 archive still carries the placeholder. Fix the public record metadata
-> (Zenodo → record → Edit → Creators) and/or cut a fresh release so the archived text
-> matches.
+> `CITATION.cff` propagated into the public Zenodo record. Because a published Zenodo
+> snapshot is immutable, that placeholder cannot be edited away inside the v1.0.1
+> archive; `v1.0.2` is the first release whose archived `CITATION.cff` carries both the
+> real affiliation and a resolvable DOI.
 
 ---
 
@@ -207,10 +213,10 @@ git push -u origin main
 Before pushing, confirm:
 
 - [x] `CITATION.cff` author is filled in — `Mingzhen Li`, School of Software, Henan
-      University of Engineering, Zhengzhou 451191, China. The archived v1.0.1 record
-      still shows the old `TODO`, so either edit the record metadata or cut a new
-      release before acceptance.
-- [x] `DATA_AVAILABILITY.md` DOI placeholder replaced — `10.5281/zenodo.23320736`.
+      University of Engineering, Zhengzhou 451191, China (in the `v1.0.2` archive; the
+      older `v1.0.1` snapshot is immutable and still displays `TODO`).
+- [x] `DATA_AVAILABILITY.md` DOI placeholder replaced — concept DOI
+      `10.5281/zenodo.23320735` (resolves to the newest archived version).
 - [ ] No `*.bin` frames are staged (`git status` should show none; `.gitignore` covers them).
 
 ---

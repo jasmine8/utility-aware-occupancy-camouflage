@@ -14,8 +14,8 @@ Use this once the GitHub release has been archived on Zenodo (see
 > 9-budget × 16-frame numerical results, and all derived figures and tables are
 > openly available in the `utility-aware-occupancy-camouflage` repository at
 > https://github.com/jasmine8/utility-aware-occupancy-camouflage and are
-> archived at https://doi.org/10.5281/zenodo.23320736 (version v1.0.1; the concept DOI
-> https://doi.org/10.5281/zenodo.23320735 always resolves to the latest version). Code is released under
+> archived on Zenodo at https://doi.org/10.5281/zenodo.23320735 (release v1.0.2; this
+> DOI always resolves to the newest archived version). Code is released under
 > the MIT License and results under CC BY 4.0. The 16 KITTI Velodyne frames used in
 > the pilot are not redistributed (KITTI is distributed under its own non-commercial
 > terms of use); a frame manifest recording the exact byte ranges and a fetch script
