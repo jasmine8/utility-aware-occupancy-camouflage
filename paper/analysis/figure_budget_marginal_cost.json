@@ -1,0 +1,52 @@
+{
+  "figure_id": "fig-budget-marginal-cost",
+  "style": "paper-plot line adaptation (Morandi mist-stone/sage-clay)",
+  "source": "experiments/main/results/removal_rate_sweep/summary.json",
+  "png": "paper/figures/budget_marginal_cost.png",
+  "pdf": "paper/figures/budget_marginal_cost.pdf",
+  "x_axis": "right endpoint of removal-budget interval",
+  "y_left": "CD increase per 0.01 budget",
+  "y_right": "F1 drop per 0.01 budget",
+  "rows": [
+    {
+      "right_endpoint": 0.1,
+      "cd_increase_per_0.01": 0.29370318461940226,
+      "f1_drop_per_0.01": -0.0023011130516039204
+    },
+    {
+      "right_endpoint": 0.15,
+      "cd_increase_per_0.01": 0.3101476614394651,
+      "f1_drop_per_0.01": -0.002638708974323656
+    },
+    {
+      "right_endpoint": 0.2,
+      "cd_increase_per_0.01": 0.47866210289912825,
+      "f1_drop_per_0.01": -0.0027549215918754024
+    },
+    {
+      "right_endpoint": 0.25,
+      "cd_increase_per_0.01": 0.4474465259166366,
+      "f1_drop_per_0.01": -0.0028535915004961115
+    },
+    {
+      "right_endpoint": 0.3,
+      "cd_increase_per_0.01": 0.6689756026644887,
+      "f1_drop_per_0.01": -0.0032735894985497457
+    },
+    {
+      "right_endpoint": 0.4,
+      "cd_increase_per_0.01": 0.9831373895896842,
+      "f1_drop_per_0.01": -0.003966983910745734
+    },
+    {
+      "right_endpoint": 0.5,
+      "cd_increase_per_0.01": 1.2309735169492162,
+      "f1_drop_per_0.01": -0.004552471370739198
+    },
+    {
+      "right_endpoint": 0.75,
+      "cd_increase_per_0.01": 2.1746854757928067,
+      "f1_drop_per_0.01": -0.00770450376239463
+    }
+  ]
+}

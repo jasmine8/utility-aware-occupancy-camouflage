@@ -1,0 +1,66 @@
+{
+  "figure_id": "fig-budget-metric-decomposition",
+  "style": "paper-plot line adaptation (Morandi mist-stone/sage-clay)",
+  "source": "experiments/main/results/removal_rate_sweep/summary.json",
+  "png": "paper/figures/budget_metric_decomposition.png",
+  "pdf": "paper/figures/budget_metric_decomposition.pdf",
+  "x_axis": "low-utility voxel removal budget",
+  "y_left": "defended Chamfer Distance (cm)",
+  "y_right": "defended Hausdorff Distance (cm)",
+  "rows": [
+    {
+      "removal_rate": 0.05,
+      "defense_cd_cm": 4.363161296319305,
+      "defense_hd_cm": 1319.8777815711126,
+      "f1_15cm": 0.9845012927144947
+    },
+    {
+      "removal_rate": 0.1,
+      "defense_cd_cm": 5.831677219416316,
+      "defense_hd_cm": 1577.6577052805396,
+      "f1_15cm": 0.9729957274564751
+    },
+    {
+      "removal_rate": 0.15,
+      "defense_cd_cm": 7.3824155266136415,
+      "defense_hd_cm": 1661.2362712889867,
+      "f1_15cm": 0.9598021825848568
+    },
+    {
+      "removal_rate": 0.2,
+      "defense_cd_cm": 9.775726041109284,
+      "defense_hd_cm": 1777.9084390549565,
+      "f1_15cm": 0.9460275746254798
+    },
+    {
+      "removal_rate": 0.25,
+      "defense_cd_cm": 12.012958670692466,
+      "defense_hd_cm": 1982.9038753827363,
+      "f1_15cm": 0.9317596171229993
+    },
+    {
+      "removal_rate": 0.3,
+      "defense_cd_cm": 15.35783668401491,
+      "defense_hd_cm": 2146.1540680292137,
+      "f1_15cm": 0.9153916696302505
+    },
+    {
+      "removal_rate": 0.4,
+      "defense_cd_cm": 25.189210579911755,
+      "defense_hd_cm": 2760.392626130977,
+      "f1_15cm": 0.8757218305227932
+    },
+    {
+      "removal_rate": 0.5,
+      "defense_cd_cm": 37.498945749403916,
+      "defense_hd_cm": 3203.7219124104804,
+      "f1_15cm": 0.8301971168154012
+    },
+    {
+      "removal_rate": 0.75,
+      "defense_cd_cm": 91.86608264422408,
+      "defense_hd_cm": 4489.635338284497,
+      "f1_15cm": 0.6375845227555355
+    }
+  ]
+}

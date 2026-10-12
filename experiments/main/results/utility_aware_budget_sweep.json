@@ -1,0 +1,232 @@
+{
+  "run_id": "run-uoc-budget-sweep-003",
+  "method": "voxel-occupancy-reconstruction",
+  "defense_variant": "deterministic-low-utility-occupancy-removal",
+  "frame_count": 16,
+  "metric_definition": {
+    "cd_cm": "Mean symmetric nearest-neighbor Euclidean distance in centimeters.",
+    "hd_cm": "Maximum symmetric nearest-neighbor Euclidean distance in centimeters.",
+    "f1_15cm": "Point-set F1 at a 15-centimeter nearest-neighbor threshold."
+  },
+  "sweep": [
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.01,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 3.3454770503382587,
+        "hd_cm": 384.86401378077414,
+        "f1_15cm": 0.9981150729744619,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9962374363816571
+      },
+      "privacy_degradation_ratio_cd": 1.0236056844771564,
+      "privacy_degradation_ratio_hd": 63.49041029635823,
+      "f1_drop": 0.0018849270255381079,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.025,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 3.5240834337071036,
+        "hd_cm": 783.7279638839614,
+        "f1_15cm": 0.9946982050232934,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9894537711193632
+      },
+      "privacy_degradation_ratio_cd": 1.0782533495334061,
+      "privacy_degradation_ratio_hd": 129.29036804169985,
+      "f1_drop": 0.005301794976706575,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.05,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 3.922304314381279,
+        "hd_cm": 1166.1559805763513,
+        "f1_15cm": 0.989008091379838,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9782609472796403
+      },
+      "privacy_degradation_ratio_cd": 1.200095810564299,
+      "privacy_degradation_ratio_hd": 192.37891573442596,
+      "f1_drop": 0.010991908620161972,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.075,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 4.4348166373943005,
+        "hd_cm": 1258.5350802143223,
+        "f1_15cm": 0.9831454326809425,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9668638261886028
+      },
+      "privacy_degradation_ratio_cd": 1.356907685016607,
+      "privacy_degradation_ratio_hd": 207.618550329527,
+      "f1_drop": 0.016854567319057545,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.1,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 5.136080677176402,
+        "hd_cm": 1492.3559410256946,
+        "f1_15cm": 0.9772030432072333,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9554468669001939
+      },
+      "privacy_degradation_ratio_cd": 1.5714713620765934,
+      "privacy_degradation_ratio_hd": 246.19160953276526,
+      "f1_drop": 0.02279695679276672,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.15,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 6.649787036140145,
+        "hd_cm": 1631.6087777027105,
+        "f1_15cm": 0.9649052628364352,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9322496367986
+      },
+      "privacy_degradation_ratio_cd": 2.0346156043926014,
+      "privacy_degradation_ratio_hd": 269.16393071369964,
+      "f1_drop": 0.035094737163564815,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.2,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 8.398194397886463,
+        "hd_cm": 1696.7765795008145,
+        "f1_15cm": 0.9514424305302601,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9075052297739818
+      },
+      "privacy_degradation_ratio_cd": 2.5695706159908087,
+      "privacy_degradation_ratio_hd": 279.91456035461533,
+      "f1_drop": 0.04855756946973988,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    },
+    {
+      "run_id": "run-uoc-budget-sweep-003",
+      "method": "voxel-occupancy-reconstruction",
+      "defense_variant": "deterministic-low-utility-occupancy-removal",
+      "removal_rate": 0.25,
+      "frame_count": 16,
+      "baseline_summary": {
+        "cd_cm": 3.2683259785208034,
+        "hd_cm": 6.0617660522954555,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense_summary": {
+        "cd_cm": 10.975091480405291,
+        "hd_cm": 1895.4722599126515,
+        "f1_15cm": 0.936314487770402,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.8804490722312049
+      },
+      "privacy_degradation_ratio_cd": 3.3580161686847583,
+      "privacy_degradation_ratio_hd": 312.693073860031,
+      "f1_drop": 0.06368551222959795,
+      "map": null,
+      "map_status": "unavailable_without_verifiable_checkpoint",
+      "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+    }
+  ],
+  "map": null,
+  "map_status": "unavailable_without_verifiable_checkpoint",
+  "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred."
+}

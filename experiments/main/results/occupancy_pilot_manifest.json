@@ -1,0 +1,102 @@
+{
+  "run_id": "run-uoc-pilot-001",
+  "status": "scope_restricted_complete_full_experiment_blocked",
+  "scope": {
+    "frames": 16,
+    "metrics_reported": [
+      "cd_cm",
+      "hd_cm",
+      "f1_15cm",
+      "precision_15cm",
+      "recall_15cm"
+    ],
+    "map": null,
+    "map_status": "unavailable_without_verifiable_checkpoint",
+    "map_reason": "The official Voxel R-CNN checkpoint is not yet available from a verifiable source; mAP is not inferred."
+  },
+  "baseline_summary": {
+    "cd_cm": 3.2683259785208034,
+    "hd_cm": 6.0617660522954555,
+    "f1_15cm": 1.0,
+    "precision_15cm": 1.0,
+    "recall_15cm": 1.0
+  },
+  "defense_summary": {
+    "cd_cm": 3.956509874037101,
+    "hd_cm": 17.618689347822606,
+    "f1_15cm": 0.9966031759435187,
+    "precision_15cm": 0.9941049065543437,
+    "recall_15cm": 0.9991148230146435
+  },
+  "privacy_degradation_ratio_cd": 1.210561584137871,
+  "privacy_degradation_ratio_hd": 2.9065274370248586,
+  "f1_drop": 0.00339682405648134,
+  "reproduce": {
+    "entrypoint": "experiments/main/run_occupancy_pilot.py",
+    "command": "python experiments/main/run_occupancy_pilot.py --data-dir experiments/main/data/kitti/training/velodyne --output experiments/main/results/occupancy_pilot.json --perturb-rate 0.2 --seed 20261003",
+    "seed": 20261003
+  },
+  "files": [
+    {
+      "path": "experiments/main/run_occupancy_pilot.py",
+      "bytes": 6725,
+      "sha256": "f56a8a670e03247f51fdd3cb8ee07b95e4e6cee14f8953d54f71cb484cd8c94e"
+    },
+    {
+      "path": "experiments/main/results/occupancy_pilot.json",
+      "bytes": 9997,
+      "sha256": "8e02c5de83e59b257c3f25bb3d8f57b635f1c0b52a85b30392d80cf67fb24dc5"
+    },
+    {
+      "path": "experiments/main/results/occupancy_rate_sweep.json",
+      "bytes": 56914,
+      "sha256": "b3fab2fb301b1567cecf388b90549a58802212524b44b98a32080c68c344a283"
+    },
+    {
+      "path": "experiments/main/artifacts/checkpoint_route_audit.json",
+      "bytes": 3081,
+      "sha256": "bce16eabfd5cca0eaeacde3aa17207d9394036fac45ee37a9ed030f661910114"
+    },
+    {
+      "path": "experiments/main/configs/voxel_rcnn_car_official.yaml",
+      "bytes": 5440,
+      "sha256": "44e9129a20eba72b83a98a3b5108aa01dc159f8d70c2cc3d63ba9ce3963ae37a"
+    },
+    {
+      "path": "experiments/main/configs/kitti_dataset_official.yaml",
+      "bytes": 1676,
+      "sha256": "a6c44a7b0f15b94e135946cecbd8b5541906a69d37811705e9884a411e7b1797"
+    },
+    {
+      "path": "experiments/main/results/voxel_smoke.json",
+      "bytes": 750,
+      "sha256": "565df32f57c5352914f4a240206a54cbfcf4919f45565efcc69d8d5bff36a553"
+    },
+    {
+      "path": "experiments/main/smoke_voxel_backbone.py",
+      "bytes": 3731,
+      "sha256": "700fb117ac0da1bb9c5eb3b0651c1ff045ebf830221395b938fc4ff22f7e9e76"
+    },
+    {
+      "path": "experiments/main/README.md",
+      "bytes": 1958,
+      "sha256": "d4a9e661664abebc6ccb640dc8d7d41f798077304bc177b23be083dbd771c783"
+    }
+  ],
+  "rate_sweep": {
+    "path": "experiments/main/results/occupancy_rate_sweep.json",
+    "rates": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "command": "python experiments/main/run_occupancy_pilot.py --data-dir experiments/main/data/kitti/training/velodyne --output experiments/main/results/occupancy_rate_sweep.json --rate 0.0 --rate 0.2 --rate 0.4 --rate 0.6 --rate 0.8 --seed 20261003",
+    "result_sha256": "b3fab2fb301b1567cecf388b90549a58802212524b44b98a32080c68c344a283",
+    "result_bytes": 56914,
+    "max_cd_ratio": 1.9109627874768216,
+    "max_hd_ratio": 2.9564648468630126,
+    "min_f1_15cm": 0.9859533185535715
+  }
+}

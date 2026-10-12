@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite both the software and the accompanying paper."
+title: "Utility-Aware Occupancy Camouflage for Point Cloud Privacy: Pilot Release"
+abstract: >-
+  Code and per-frame numerical results for a scoped pilot on utility-aware occupancy
+  camouflage: a deterministic, gradient-free sender-side defense that removes the
+  lowest-utility fraction of occupied voxels in order to degrade an
+  occupancy-based point-cloud reconstruction path. Released artifacts cover a fixed
+  16-frame KITTI Velodyne subset across nine removal budgets.
+type: software
+version: "1.0.0"
+date-released: "2026-10-12"
+license: MIT
+repository-code: "https://github.com/jasmine8/utility-aware-occupancy-camouflage"
+keywords:
+  - point clouds
+  - model inversion
+  - privacy
+  - autonomous driving
+  - KITTI
+  - voxel features
+
+# ------------------------------------------------------------------------------
+# TODO(author): `affiliation` (and optionally `orcid`) still need real values.
+# ------------------------------------------------------------------------------
+authors:
+  - family-names: "Li"
+    given-names: "Mingzhen"
+    affiliation: "TODO"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+
+# ------------------------------------------------------------------------------
+# TODO(author): after the manuscript is accepted, add the journal reference and
+# DOI below (or uncomment and complete the block).
+# ------------------------------------------------------------------------------
+# preferred-citation:
+#   type: article
+#   title: "Utility-Aware Occupancy Camouflage for Point Cloud Privacy: A Scoped Pilot Study"
+#   authors:
+#     - family-names: "Li"
+#       given-names: "Mingzhen"
+#   journal: "Entropy"
+#   doi: "10.3390/eXXXXXXX"
+#   year: 2026

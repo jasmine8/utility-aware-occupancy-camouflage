@@ -1,0 +1,128 @@
+{
+  "figure_id": "fig-frame-variability",
+  "style": "paper-plot line/bar adaptation (Morandi mist-stone/sage-clay)",
+  "source": "experiments/main/results/removal_rate_sweep/rate_0.25.json",
+  "png": "paper/figures/frame_variability.png",
+  "pdf": "paper/figures/frame_variability.pdf",
+  "x_axis": "fixed frame index (1..16)",
+  "y_panels": [
+    "defended CD (cm)",
+    "CD degradation ratio",
+    "HD degradation ratio",
+    "reconstruction F1@15cm"
+  ],
+  "rows": [
+    {
+      "frame": "000001.bin",
+      "defended_cd_cm": 11.738091758412294,
+      "cd_degradation_ratio": 3.5769630937978802,
+      "hd_degradation_ratio": 185.68189414052136,
+      "f1_15cm": 0.9141178442564378
+    },
+    {
+      "frame": "000002.bin",
+      "defended_cd_cm": 15.836182907927865,
+      "cd_degradation_ratio": 4.756668217419351,
+      "hd_degradation_ratio": 269.94177175861523,
+      "f1_15cm": 0.9476481267535897
+    },
+    {
+      "frame": "000004.bin",
+      "defended_cd_cm": 15.216282282844155,
+      "cd_degradation_ratio": 4.5047163066985,
+      "hd_degradation_ratio": 208.42266587289132,
+      "f1_15cm": 0.9219077761012769
+    },
+    {
+      "frame": "000005.bin",
+      "defended_cd_cm": 13.5271705764713,
+      "cd_degradation_ratio": 4.040880351890301,
+      "hd_degradation_ratio": 354.415120546311,
+      "f1_15cm": 0.9180847328440399
+    },
+    {
+      "frame": "000006.bin",
+      "defended_cd_cm": 23.761688883335598,
+      "cd_degradation_ratio": 7.32452275600903,
+      "hd_degradation_ratio": 394.76917522647005,
+      "f1_15cm": 0.9217726006583946
+    },
+    {
+      "frame": "000008.bin",
+      "defended_cd_cm": 9.50043949621983,
+      "cd_degradation_ratio": 2.9927487795446313,
+      "hd_degradation_ratio": 394.4254092489361,
+      "f1_15cm": 0.9489932533536345
+    },
+    {
+      "frame": "000015.bin",
+      "defended_cd_cm": 10.40618914789256,
+      "cd_degradation_ratio": 3.2052585404718656,
+      "hd_degradation_ratio": 464.26481296864085,
+      "f1_15cm": 0.9451803404159094
+    },
+    {
+      "frame": "000019.bin",
+      "defended_cd_cm": 9.403033688392261,
+      "cd_degradation_ratio": 2.8988111634787437,
+      "hd_degradation_ratio": 249.36613551436548,
+      "f1_15cm": 0.9362744237487491
+    },
+    {
+      "frame": "000020.bin",
+      "defended_cd_cm": 12.474388144060038,
+      "cd_degradation_ratio": 3.799929955103532,
+      "hd_degradation_ratio": 323.9277265083202,
+      "f1_15cm": 0.9336352058865148
+    },
+    {
+      "frame": "000021.bin",
+      "defended_cd_cm": 9.467092456755415,
+      "cd_degradation_ratio": 2.929315524786792,
+      "hd_degradation_ratio": 421.56959533528595,
+      "f1_15cm": 0.9370161650366851
+    },
+    {
+      "frame": "000023.bin",
+      "defended_cd_cm": 10.679785028285197,
+      "cd_degradation_ratio": 3.269917658510704,
+      "hd_degradation_ratio": 268.82229877391677,
+      "f1_15cm": 0.915209705433738
+    },
+    {
+      "frame": "000024.bin",
+      "defended_cd_cm": 16.33550939379967,
+      "cd_degradation_ratio": 4.9293555874336965,
+      "hd_degradation_ratio": 501.0277415195507,
+      "f1_15cm": 0.9247808576166785
+    },
+    {
+      "frame": "000025.bin",
+      "defended_cd_cm": 7.199919416475422,
+      "cd_degradation_ratio": 2.2295481424579604,
+      "hd_degradation_ratio": 215.4718961576494,
+      "f1_15cm": 0.9436848027156396
+    },
+    {
+      "frame": "000027.bin",
+      "defended_cd_cm": 9.337744500920966,
+      "cd_degradation_ratio": 2.846353346675501,
+      "hd_degradation_ratio": 146.44213860902735,
+      "f1_15cm": 0.9197650804105604
+    },
+    {
+      "frame": "000028.bin",
+      "defended_cd_cm": 7.750385244356243,
+      "cd_degradation_ratio": 2.4138631151605496,
+      "hd_degradation_ratio": 557.4997152537547,
+      "f1_15cm": 0.9426587552076758
+    },
+    {
+      "frame": "000031.bin",
+      "defended_cd_cm": 9.57343580493064,
+      "cd_degradation_ratio": 2.9614917717088374,
+      "hd_degradation_ratio": 274.5637707060885,
+      "f1_15cm": 0.9374242035284641
+    }
+  ]
+}

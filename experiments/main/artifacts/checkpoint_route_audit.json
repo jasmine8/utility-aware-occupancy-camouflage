@@ -1,0 +1,97 @@
+{
+  "checkpoint_status": "official_google_drive_blocked_no_verifiable_mirror_found",
+  "searched": [
+    "baidu exact file id and filename search",
+    "bing",
+    "bing model-28m exact search",
+    "candidate repository git trees",
+    "github api",
+    "github repository search",
+    "google drive direct",
+    "grep.app",
+    "hf-mirror torch-pointcloud repository listing",
+    "huggingface",
+    "modelscope",
+    "modelscope public aggregate and dataset apis",
+    "openpcdet forks and candidate repositories",
+    "openpcdet github releases",
+    "sourcegraph"
+  ],
+  "configs": [
+    {
+      "path": "experiments/main/configs/voxel_rcnn_car_official.yaml",
+      "bytes": 5440,
+      "sha256": "44e9129a20eba72b83a98a3b5108aa01dc159f8d70c2cc3d63ba9ce3963ae37a",
+      "source": "https://api.github.com/repos/open-mmlab/OpenPCDet/contents/tools/cfgs/kitti_models/voxel_rcnn_car.yaml",
+      "ref": "master"
+    },
+    {
+      "path": "experiments/main/configs/kitti_dataset_official.yaml",
+      "bytes": 1676,
+      "sha256": "a6c44a7b0f15b94e135946cecbd8b5541906a69d37811705e9884a411e7b1797",
+      "source": "https://api.github.com/repos/open-mmlab/OpenPCDet/contents/tools/cfgs/dataset_configs/kitti_dataset.yaml",
+      "ref": "master"
+    }
+  ],
+  "evidence": [
+    "experiments/main/results/voxel_smoke.json"
+  ],
+  "candidate_repositories": [
+    {
+      "repository": "jashmehta20/Voxel-RCNN-OpenPCDet",
+      "result": "git tree has no weight file; README links a different multi-class Google Drive model"
+    },
+    {
+      "repository": "open-mmlab/OpenPCDet forks checked",
+      "result": "candidate trees contain no .pth/.ckpt weights"
+    },
+    {
+      "repository": "torch-pointcloud HF repositories",
+      "result": "OpenPCDet-derived PointPillars/PointRCNN/SECOND/VoxelNeXt weights exist, but no Voxel R-CNN repository or file"
+    }
+  ],
+  "candidate_hf_repositories": [
+    {
+      "id": "torch-pointcloud/pointpillars.kitti.openpcdet",
+      "sha": "39b9c8a245ed39e0a818af0fa739b914ffb1b558",
+      "files": [
+        "README.md",
+        "model.safetensors"
+      ],
+      "map": 64.16,
+      "usable_for_baseline": false,
+      "reason": "different architecture"
+    },
+    {
+      "id": "torch-pointcloud/pointrcnn.kitti.openpcdet",
+      "sha": "f59a4beec162c33e964189ef02df0f42a60a507f",
+      "files": [
+        "README.md",
+        "model.safetensors"
+      ],
+      "map": 69.29,
+      "usable_for_baseline": false,
+      "reason": "different architecture"
+    },
+    {
+      "id": "torch-pointcloud/second.kitti.openpcdet",
+      "sha": "4cc1de86924813a3e90f5080558895c04a0161ed",
+      "files": [
+        "README.md",
+        "model.safetensors"
+      ],
+      "usable_for_baseline": false,
+      "reason": "different architecture"
+    },
+    {
+      "id": "torch-pointcloud/voxelnext.nuscenes.openpcdet",
+      "sha": "5802ce3855465df20b72db5b26a7cc03c153e5f3",
+      "files": [
+        "README.md",
+        "model.safetensors"
+      ],
+      "usable_for_baseline": false,
+      "reason": "different architecture and dataset"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "figure_id": "fig-occupancy-degradation-relation",
+  "style": "paper-plot scatter adaptation (Morandi mist-stone/sage-clay)",
+  "source": "experiments/main/results/removal_rate_sweep/rate_0.25.json",
+  "png": "paper/figures/occupancy_degradation_relation.png",
+  "pdf": "paper/figures/occupancy_degradation_relation.pdf",
+  "x_axis": "occupied voxels before defense",
+  "y_left": "CD degradation ratio",
+  "y_right": "reconstruction F1@15cm",
+  "linear_fit": {
+    "slope": 1.5530060694571904e-06,
+    "intercept": 3.60559928494231,
+    "pearson_r": 0.0058458491017832105
+  },
+  "rows": [
+    {
+      "frame": "000001.bin",
+      "occupied_voxels": 44279,
+      "cd_degradation_ratio": 3.5769630937978802,
+      "f1_15cm": 0.9141178442564378
+    },
+    {
+      "frame": "000002.bin",
+      "occupied_voxels": 32807,
+      "cd_degradation_ratio": 4.756668217419351,
+      "f1_15cm": 0.9476481267535897
+    },
+    {
+      "frame": "000004.bin",
+      "occupied_voxels": 40989,
+      "cd_degradation_ratio": 4.5047163066985,
+      "f1_15cm": 0.9219077761012769
+    },
+    {
+      "frame": "000005.bin",
+      "occupied_voxels": 50508,
+      "cd_degradation_ratio": 4.040880351890301,
+      "f1_15cm": 0.9180847328440399
+    },
+    {
+      "frame": "000006.bin",
+      "occupied_voxels": 36194,
+      "cd_degradation_ratio": 7.32452275600903,
+      "f1_15cm": 0.9217726006583946
+    },
+    {
+      "frame": "000008.bin",
+      "occupied_voxels": 35986,
+      "cd_degradation_ratio": 2.9927487795446313,
+      "f1_15cm": 0.9489932533536345
+    },
+    {
+      "frame": "000015.bin",
+      "occupied_voxels": 35651,
+      "cd_degradation_ratio": 3.2052585404718656,
+      "f1_15cm": 0.9451803404159094
+    },
+    {
+      "frame": "000019.bin",
+      "occupied_voxels": 39311,
+      "cd_degradation_ratio": 2.8988111634787437,
+      "f1_15cm": 0.9362744237487491
+    },
+    {
+      "frame": "000020.bin",
+      "occupied_voxels": 40454,
+      "cd_degradation_ratio": 3.799929955103532,
+      "f1_15cm": 0.9336352058865148
+    },
+    {
+      "frame": "000021.bin",
+      "occupied_voxels": 42598,
+      "cd_degradation_ratio": 2.929315524786792,
+      "f1_15cm": 0.9370161650366851
+    },
+    {
+      "frame": "000023.bin",
+      "occupied_voxels": 44286,
+      "cd_degradation_ratio": 3.269917658510704,
+      "f1_15cm": 0.915209705433738
+    },
+    {
+      "frame": "000024.bin",
+      "occupied_voxels": 44691,
+      "cd_degradation_ratio": 4.9293555874336965,
+      "f1_15cm": 0.9247808576166785
+    },
+    {
+      "frame": "000025.bin",
+      "occupied_voxels": 34363,
+      "cd_degradation_ratio": 2.2295481424579604,
+      "f1_15cm": 0.9436848027156396
+    },
+    {
+      "frame": "000027.bin",
+      "occupied_voxels": 35884,
+      "cd_degradation_ratio": 2.846353346675501,
+      "f1_15cm": 0.9197650804105604
+    },
+    {
+      "frame": "000028.bin",
+      "occupied_voxels": 42206,
+      "cd_degradation_ratio": 2.4138631151605496,
+      "f1_15cm": 0.9426587552076758
+    },
+    {
+      "frame": "000031.bin",
+      "occupied_voxels": 37753,
+      "cd_degradation_ratio": 2.9614917717088374,
+      "f1_15cm": 0.9374242035284641
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "input_path": "experiments/main/data/kitti/training/velodyne/000002.bin",
+  "input_points": 126891,
+  "input_voxels": 32807,
+  "grid_size": [
+    40,
+    1600,
+    1408
+  ],
+  "source_sparse_shape": [
+    1408,
+    1600,
+    40,
+    1,
+    0,
+    0
+  ],
+  "used_sparse_shape": [
+    1408,
+    1600,
+    40
+  ],
+  "layer_feature_shapes": {
+    "x_conv1": [
+      32807,
+      16
+    ],
+    "x_conv2": [
+      2598,
+      32
+    ],
+    "x_conv3": [
+      775,
+      64
+    ],
+    "x_conv4": [
+      216,
+      64
+    ]
+  },
+  "layer_index_counts": {
+    "x_conv1": 32807,
+    "x_conv2": 2598,
+    "x_conv3": 775,
+    "x_conv4": 216
+  },
+  "output_feature_shape": [
+    182,
+    128
+  ],
+  "output_index_count": 182,
+  "all_features_finite": true
+}

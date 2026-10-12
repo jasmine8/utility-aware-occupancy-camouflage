@@ -1,0 +1,14 @@
+# Core dependencies for the reconstruction pilot and the 9-budget sweep.
+# These are the only packages needed to reproduce every released number.
+numpy>=1.24
+scipy>=1.10
+
+# Figure regeneration only (paper/figures/scripts/gen_all_figures.py).
+matplotlib>=3.7
+
+# Optional: the OpenPCDet VoxelBackbone smoke test
+# (experiments/main/smoke_voxel_backbone.py). These are NOT needed to reproduce
+# the pilot numbers; that script only documents the audited backbone route.
+# torch>=2.0
+# spconv-cu118
+# easydict

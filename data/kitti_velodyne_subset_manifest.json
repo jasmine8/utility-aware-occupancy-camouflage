@@ -1,0 +1,153 @@
+{
+  "source_url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip",
+  "val_list_path": "tmp/kitti-remote/val.txt",
+  "central_directory_path": "tmp/kitti-remote/velodyne-central-directory.bin",
+  "selection_rule": "first 16 entries of val.txt",
+  "sample_count": 16,
+  "records": [
+    {
+      "sample_id": "000001",
+      "entry_name": "training/velodyne/000001.bin",
+      "data_start": 12379452456,
+      "data_end": 12381376743,
+      "expected_size": 1924288,
+      "downloaded_size": 1924288,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000001.bin"
+    },
+    {
+      "sample_id": "000002",
+      "entry_name": "training/velodyne/000002.bin",
+      "data_start": 8320172804,
+      "data_end": 8322203059,
+      "expected_size": 2030256,
+      "downloaded_size": 2030256,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000002.bin"
+    },
+    {
+      "sample_id": "000004",
+      "entry_name": "training/velodyne/000004.bin",
+      "data_start": 4114082148,
+      "data_end": 4115937763,
+      "expected_size": 1855616,
+      "downloaded_size": 1855616,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000004.bin"
+    },
+    {
+      "sample_id": "000005",
+      "entry_name": "training/velodyne/000005.bin",
+      "data_start": 12043786974,
+      "data_end": 12045788349,
+      "expected_size": 2001376,
+      "downloaded_size": 2001376,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000005.bin"
+    },
+    {
+      "sample_id": "000006",
+      "entry_name": "training/velodyne/000006.bin",
+      "data_start": 13931381244,
+      "data_end": 13933142667,
+      "expected_size": 1761424,
+      "downloaded_size": 1761424,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000006.bin"
+    },
+    {
+      "sample_id": "000008",
+      "entry_name": "training/velodyne/000008.bin",
+      "data_start": 1082414712,
+      "data_end": 1084375591,
+      "expected_size": 1960880,
+      "downloaded_size": 1960880,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000008.bin"
+    },
+    {
+      "sample_id": "000015",
+      "entry_name": "training/velodyne/000015.bin",
+      "data_start": 9364177898,
+      "data_end": 9366139225,
+      "expected_size": 1961328,
+      "downloaded_size": 1961328,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000015.bin"
+    },
+    {
+      "sample_id": "000019",
+      "entry_name": "training/velodyne/000019.bin",
+      "data_start": 6473221448,
+      "data_end": 6475072599,
+      "expected_size": 1851152,
+      "downloaded_size": 1851152,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000019.bin"
+    },
+    {
+      "sample_id": "000020",
+      "entry_name": "training/velodyne/000020.bin",
+      "data_start": 10647340198,
+      "data_end": 10649363493,
+      "expected_size": 2023296,
+      "downloaded_size": 2023296,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000020.bin"
+    },
+    {
+      "sample_id": "000021",
+      "entry_name": "training/velodyne/000021.bin",
+      "data_start": 11467614330,
+      "data_end": 11469618489,
+      "expected_size": 2004160,
+      "downloaded_size": 2004160,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000021.bin"
+    },
+    {
+      "sample_id": "000023",
+      "entry_name": "training/velodyne/000023.bin",
+      "data_start": 2557164810,
+      "data_end": 2559091401,
+      "expected_size": 1926592,
+      "downloaded_size": 1926592,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000023.bin"
+    },
+    {
+      "sample_id": "000024",
+      "entry_name": "training/velodyne/000024.bin",
+      "data_start": 2729510790,
+      "data_end": 2731538469,
+      "expected_size": 2027680,
+      "downloaded_size": 2027680,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000024.bin"
+    },
+    {
+      "sample_id": "000025",
+      "entry_name": "training/velodyne/000025.bin",
+      "data_start": 9778892374,
+      "data_end": 9780744853,
+      "expected_size": 1852480,
+      "downloaded_size": 1852480,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000025.bin"
+    },
+    {
+      "sample_id": "000027",
+      "entry_name": "training/velodyne/000027.bin",
+      "data_start": 7329858452,
+      "data_end": 7331788707,
+      "expected_size": 1930256,
+      "downloaded_size": 1930256,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000027.bin"
+    },
+    {
+      "sample_id": "000028",
+      "entry_name": "training/velodyne/000028.bin",
+      "data_start": 4672289852,
+      "data_end": 4674130523,
+      "expected_size": 1840672,
+      "downloaded_size": 1840672,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000028.bin"
+    },
+    {
+      "sample_id": "000031",
+      "entry_name": "training/velodyne/000031.bin",
+      "data_start": 1495296456,
+      "data_end": 1497237111,
+      "expected_size": 1940656,
+      "downloaded_size": 1940656,
+      "output_path": "experiments/main/data/kitti/training/velodyne/000031.bin"
+    }
+  ]
+}

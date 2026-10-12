@@ -1,0 +1,381 @@
+{
+  "run_id": "run-uoc-pilot-002",
+  "method": "voxel-occupancy-reconstruction",
+  "defense_variant": "deterministic-low-utility-occupancy-removal",
+  "removal_rate": 0.1,
+  "frame_count": 16,
+  "baseline_summary": {
+    "cd_cm": 3.2683259785208034,
+    "hd_cm": 6.0617660522954555,
+    "f1_15cm": 1.0,
+    "precision_15cm": 1.0,
+    "recall_15cm": 1.0
+  },
+  "defense_summary": {
+    "cd_cm": 5.831677219416316,
+    "hd_cm": 1577.6577052805396,
+    "f1_15cm": 0.9729957274564751,
+    "precision_15cm": 1.0,
+    "recall_15cm": 0.947474984170924
+  },
+  "privacy_degradation_ratio_cd": 1.7843009717334402,
+  "privacy_degradation_ratio_hd": 260.2637072546071,
+  "f1_drop": 0.027004272543524888,
+  "map": null,
+  "map_status": "unavailable_without_verifiable_checkpoint",
+  "map_reason": "The official Voxel R-CNN checkpoint is not available from a verifiable source; mAP is not inferred.",
+  "frames": [
+    {
+      "frame": "000001.bin",
+      "points": 61544,
+      "occupied_voxels": 44279,
+      "defended_occupied_voxels": 39717,
+      "removed_voxels": 4562,
+      "utility_threshold": 5.0,
+      "baseline": {
+        "cd_cm": 3.2815803380149626,
+        "hd_cm": 6.0448053620396704,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.942874265033398,
+        "hd_cm": 989.5513581347801,
+        "f1_15cm": 0.9724084385931225,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9462985831275186
+      }
+    },
+    {
+      "frame": "000002.bin",
+      "points": 63762,
+      "occupied_voxels": 32807,
+      "defended_occupied_voxels": 29468,
+      "removed_voxels": 3339,
+      "utility_threshold": 10.0,
+      "baseline": {
+        "cd_cm": 3.329259511927766,
+        "hd_cm": 6.083591091353992,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 7.14288717471373,
+        "hd_cm": 816.8134060650905,
+        "f1_15cm": 0.9778946187262556,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9567453969448888
+      }
+    },
+    {
+      "frame": "000004.bin",
+      "points": 58590,
+      "occupied_voxels": 40989,
+      "defended_occupied_voxels": 36203,
+      "removed_voxels": 4786,
+      "utility_threshold": 5.0,
+      "baseline": {
+        "cd_cm": 3.3778558397157195,
+        "hd_cm": 6.044909293927127,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 5.705729462400732,
+        "hd_cm": 1027.4577439205646,
+        "f1_15cm": 0.9680498802310835,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9380781703362349
+      }
+    },
+    {
+      "frame": "000005.bin",
+      "points": 63166,
+      "occupied_voxels": 50508,
+      "defended_occupied_voxels": 45168,
+      "removed_voxels": 5340,
+      "utility_threshold": 7.0,
+      "baseline": {
+        "cd_cm": 3.347580081192794,
+        "hd_cm": 6.083619700706544,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 7.350271769353069,
+        "hd_cm": 2009.9381155926255,
+        "f1_15cm": 0.9681034412343682,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9381787670582276
+      }
+    },
+    {
+      "frame": "000006.bin",
+      "points": 53224,
+      "occupied_voxels": 36194,
+      "defended_occupied_voxels": 31536,
+      "removed_voxels": 4658,
+      "utility_threshold": 5.0,
+      "baseline": {
+        "cd_cm": 3.2441279350032106,
+        "hd_cm": 6.043206295948638,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 7.210880476867404,
+        "hd_cm": 1322.8718808473307,
+        "f1_15cm": 0.9654897616062664,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9332819780550128
+      }
+    },
+    {
+      "frame": "000008.bin",
+      "points": 60054,
+      "occupied_voxels": 35986,
+      "defended_occupied_voxels": 32113,
+      "removed_voxels": 3873,
+      "utility_threshold": 6.0,
+      "baseline": {
+        "cd_cm": 3.174486131664346,
+        "hd_cm": 6.083591091353992,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 5.982889242795323,
+        "hd_cm": 2057.2918205710835,
+        "f1_15cm": 0.9799312072699479,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9606520797948513
+      }
+    },
+    {
+      "frame": "000015.bin",
+      "points": 60640,
+      "occupied_voxels": 35651,
+      "defended_occupied_voxels": 31661,
+      "removed_voxels": 3990,
+      "utility_threshold": 7.0,
+      "baseline": {
+        "cd_cm": 3.246598992404713,
+        "hd_cm": 6.043237070435632,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 5.522775769917221,
+        "hd_cm": 2317.7939149213485,
+        "f1_15cm": 0.9787119374831582,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9583113456464379
+      }
+    },
+    {
+      "frame": "000019.bin",
+      "points": 60593,
+      "occupied_voxels": 39311,
+      "defended_occupied_voxels": 35348,
+      "removed_voxels": 3963,
+      "utility_threshold": 9.0,
+      "baseline": {
+        "cd_cm": 3.243755166551818,
+        "hd_cm": 6.007526816797288,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.651206951164642,
+        "hd_cm": 885.8505865358946,
+        "f1_15cm": 0.9776266725159025,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9562325681184295
+      }
+    },
+    {
+      "frame": "000020.bin",
+      "points": 64056,
+      "occupied_voxels": 40454,
+      "defended_occupied_voxels": 35510,
+      "removed_voxels": 4944,
+      "utility_threshold": 7.0,
+      "baseline": {
+        "cd_cm": 3.2827942334321696,
+        "hd_cm": 6.12373798398551,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 6.009575270391688,
+        "hd_cm": 1642.9522177216434,
+        "f1_15cm": 0.9718550619959071,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9452510303484452
+      }
+    },
+    {
+      "frame": "000021.bin",
+      "points": 63095,
+      "occupied_voxels": 42598,
+      "defended_occupied_voxels": 37540,
+      "removed_voxels": 5058,
+      "utility_threshold": 9.0,
+      "baseline": {
+        "cd_cm": 3.231844564591406,
+        "hd_cm": 6.043158952681128,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 5.596191790363983,
+        "hd_cm": 2534.067571680965,
+        "f1_15cm": 0.9748818014914945,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.950994532054838
+      }
+    },
+    {
+      "frame": "000023.bin",
+      "points": 61519,
+      "occupied_voxels": 44286,
+      "defended_occupied_voxels": 39730,
+      "removed_voxels": 4556,
+      "utility_threshold": 5.0,
+      "baseline": {
+        "cd_cm": 3.2660715478533926,
+        "hd_cm": 6.0448558628584514,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.9602841195499,
+        "hd_cm": 1142.8714692774413,
+        "f1_15cm": 0.9727143692076481,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.946878200230823
+      }
+    },
+    {
+      "frame": "000024.bin",
+      "points": 63539,
+      "occupied_voxels": 44691,
+      "defended_occupied_voxels": 39661,
+      "removed_voxels": 5030,
+      "utility_threshold": 7.0,
+      "baseline": {
+        "cd_cm": 3.3139239204904274,
+        "hd_cm": 6.0836108827299595,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 9.089262175417712,
+        "hd_cm": 1942.5479173674235,
+        "f1_15cm": 0.968782205776144,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9394545082547726
+      }
+    },
+    {
+      "frame": "000025.bin",
+      "points": 55390,
+      "occupied_voxels": 34363,
+      "defended_occupied_voxels": 30267,
+      "removed_voxels": 4096,
+      "utility_threshold": 8.0,
+      "baseline": {
+        "cd_cm": 3.2293177614625925,
+        "hd_cm": 6.083675746480063,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.517583277022809,
+        "hd_cm": 1310.8611487023625,
+        "f1_15cm": 0.9774971848405974,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.955984834807727
+      }
+    },
+    {
+      "frame": "000027.bin",
+      "points": 49202,
+      "occupied_voxels": 35884,
+      "defended_occupied_voxels": 30113,
+      "removed_voxels": 5771,
+      "utility_threshold": 5.0,
+      "baseline": {
+        "cd_cm": 3.2805991961002716,
+        "hd_cm": 6.0075166953345205,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 5.371429581863515,
+        "hd_cm": 805.2487454992748,
+        "f1_15cm": 0.9579379871230091,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.919271574326247
+      }
+    },
+    {
+      "frame": "000028.bin",
+      "points": 62814,
+      "occupied_voxels": 42206,
+      "defended_occupied_voxels": 37247,
+      "removed_voxels": 4959,
+      "utility_threshold": 8.0,
+      "baseline": {
+        "cd_cm": 3.2107807587261443,
+        "hd_cm": 6.0836417101231826,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.914140698859373,
+        "hd_cm": 3391.6285210995397,
+        "f1_15cm": 0.9787005723204995,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9582895532842997
+      }
+    },
+    {
+      "frame": "000031.bin",
+      "points": 60018,
+      "occupied_voxels": 37753,
+      "defended_occupied_voxels": 33757,
+      "removed_voxels": 3996,
+      "utility_threshold": 8.0,
+      "baseline": {
+        "cd_cm": 3.2326396772011234,
+        "hd_cm": 6.083572279971592,
+        "f1_15cm": 1.0,
+        "precision_15cm": 1.0,
+        "recall_15cm": 1.0
+      },
+      "defense": {
+        "cd_cm": 4.338853484946563,
+        "hd_cm": 1044.776866551264,
+        "f1_15cm": 0.9773464988881978,
+        "precision_15cm": 1.0,
+        "recall_15cm": 0.9556966243460295
+      }
+    }
+  ]
+}

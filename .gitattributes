@@ -1,0 +1,17 @@
+# Normalize line endings so the repository is identical on every platform.
+* text=auto eol=lf
+
+# Binary artifacts — never line-ending-translated.
+*.png binary
+*.pdf binary
+*.bin binary
+
+# Explicit types
+*.py    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.cff   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.txt   text eol=lf
+License text=lf

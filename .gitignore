@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Downloaded KITTI frames are restored at run time, never committed.
+# KITTI is distributed under its own (non-commercial) terms of use.
+experiments/main/data/kitti/training/velodyne/*.bin
+tmp/
+
+# Scratch / editor / OS
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
