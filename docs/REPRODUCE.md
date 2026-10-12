@@ -183,7 +183,12 @@ A DOI is what makes the statement strongest, and it takes minutes:
 > `CITATION.cff` in step with the tag — Zenodo reads that file for the record metadata.
 > Here `v1.0.0` and `v1.0.1` were tagged on the *same* commit, so the two archived
 > snapshots are byte-identical, and an unfilled `affiliation: "TODO"` from
-> `CITATION.cff` propagated into the public Zenodo record.
+> `CITATION.cff` propagated into the public Zenodo record. The `affiliation` field is
+> filled in the working tree (`School of Software, Henan University of Engineering,
+> Zhengzhou 451191, China`) but **the archived snapshots cannot be rewritten** — the
+> v1.0.1 archive still carries the placeholder. Fix the public record metadata
+> (Zenodo → record → Edit → Creators) and/or cut a fresh release so the archived text
+> matches.
 
 ---
 
@@ -201,8 +206,10 @@ git push -u origin main
 
 Before pushing, confirm:
 
-- [x] `CITATION.cff` author is filled in. `affiliation` is still `TODO` and **must be
-      fixed in the Zenodo record itself** (record → Edit → Creators) before acceptance.
+- [x] `CITATION.cff` author is filled in — `Mingzhen Li`, School of Software, Henan
+      University of Engineering, Zhengzhou 451191, China. The archived v1.0.1 record
+      still shows the old `TODO`, so either edit the record metadata or cut a new
+      release before acceptance.
 - [x] `DATA_AVAILABILITY.md` DOI placeholder replaced — `10.5281/zenodo.23320736`.
 - [ ] No `*.bin` frames are staged (`git status` should show none; `.gitignore` covers them).
 

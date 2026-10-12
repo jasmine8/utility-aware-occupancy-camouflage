@@ -183,7 +183,8 @@ their own licenses.
 
 ## 5. Citation
 
-Author: **Mingzhen Li**. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+Author: **Mingzhen Li**, School of Software, Henan University of Engineering, Zhengzhou
+451191, China. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
 To cite the released artifacts, use the version DOI **10.5281/zenodo.23320736**
 (v1.0.1); the concept DOI `10.5281/zenodo.23320735` always resolves to the latest
