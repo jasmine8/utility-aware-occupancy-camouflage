@@ -11,11 +11,13 @@ Use this once the GitHub release has been archived on Zenodo (see
 *"Data available in a publicly accessible repository"*.
 
 > **Data Availability Statement:** The reconstruction code, the complete
-> 9-budget × 16-frame numerical results, and all derived figures and tables are
-> openly available in the `utility-aware-occupancy-camouflage` repository at
+> 9-budget × 16-frame numerical results, a journal-independent reproduction
+> package for the occupancy-entropy analysis, and all derived figures and tables
+> are openly available in the `utility-aware-occupancy-camouflage` repository at
 > https://github.com/jasmine8/utility-aware-occupancy-camouflage and are
-> archived on Zenodo at https://doi.org/10.5281/zenodo.23320735 (release v1.0.2; this
-> DOI always resolves to the newest archived version). Code is released under
+> archived on Zenodo at https://doi.org/10.5281/zenodo.23320735 (release
+> v1.0.3, version DOI https://doi.org/10.5281/zenodo.23421730; this DOI
+> always resolves to the newest archived version). Code is released under
 > the MIT License and results under CC BY 4.0. The 16 KITTI Velodyne frames used in
 > the pilot are not redistributed (KITTI is distributed under its own non-commercial
 > terms of use); a frame manifest recording the exact byte ranges and a fetch script
