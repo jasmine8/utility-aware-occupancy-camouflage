@@ -7,7 +7,9 @@ Code, per-frame numerical results, and figure/table artifacts for the scoped pil
 
 This repository is the artifact bundle referenced by the manuscript's data-and-code
 availability statement. It contains the **full 9-budget × 16-frame numerical results**
-and the **reconstruction code**, plus every figure and table derived from them.
+and the **reconstruction code**, plus every figure and table derived from them —
+including the journal-independent occupancy-entropy package in
+[`reproducibility/`](reproducibility/README.md).
 
 **Archived release:** https://doi.org/10.5281/zenodo.23320735 — concept DOI, which
 always resolves to the newest archived version. A version-specific DOI is minted for
@@ -81,6 +83,9 @@ privacy-degradation measurement under a fixed, non-adaptive reconstruction path.
 │       ├── occupancy_pilot.json              # per-frame reconstruction baseline
 │       ├── occupancy_rate_sweep.json         # random-jitter perturbation sweep {0.0 … 0.8}
 │       └── voxel_smoke.json                  # backbone audit evidence
+├── reproducibility/
+│   ├── reproduce_entropy.py                  # occupancy-entropy experiment (journal-independent)
+│   └── results/                              # per-budget entropy data + the manuscript's entropy figure
 └── paper/
     ├── figures/                              # all figures (PDF + PNG) and the generator script
     ├── analysis/                             # per-figure data (JSON) consumed by the generators
@@ -170,6 +175,25 @@ python paper/figures/scripts/gen_all_figures.py
 | Operating-point rule | smallest tested budget with mean CD degradation ≥ 3× |
 | Detection mAP | not evaluated (no verifiable checkpoint) |
 
+### 3.6 The occupancy-entropy reproducibility package
+
+The manuscript's occupancy-entropy analysis — binary entropy of the marginal
+voxel-occupancy proportion across the same ten removal budgets — has its own
+journal-independent package in [`reproducibility/`](reproducibility/README.md).
+After restoring the 16 frames (§3.2), verify it against the released CSV:
+
+```bash
+python reproducibility/reproduce_entropy.py \
+  --data-dir experiments/main/data/kitti/training/velodyne \
+  --output-dir /tmp/entropy_check \
+  --compare-csv reproducibility/results/entropy_analysis.csv
+```
+
+The comparison must print `Comparison mismatches: 0` (integers exact, floats within
+`rtol=1e-10`). The released figure is
+[`reproducibility/results/entropy_budget.pdf`](reproducibility/results/entropy_budget.pdf)
+— the same file the manuscript includes.
+
 ---
 
 ## 4. License
@@ -188,8 +212,8 @@ Author: **Mingzhen Li**, School of Software, Henan University of Engineering, Zh
 451191, China. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
 To cite the released artifacts, use DOI **10.5281/zenodo.23320735**, which always
-resolves to the newest archived version (currently **v1.0.2**). A version-specific DOI
-is minted for each release — e.g. `10.5281/zenodo.23320736` for v1.0.1. The manuscript
+resolves to the newest archived version. A version-specific DOI is minted for each
+release; the full version list is on the DOI landing page. The manuscript
 is under review; its journal DOI will be added on acceptance.
 
 ## 6. Data availability

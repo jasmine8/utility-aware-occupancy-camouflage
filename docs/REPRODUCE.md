@@ -111,6 +111,27 @@ for r in 0.01 0.025 0.05 0.075 0.10 0.15 0.20 0.25; do
 done
 ```
 
+### 3.4 The occupancy-entropy reproducibility package
+
+`reproducibility/` holds the journal-independent package behind the manuscript's
+occupancy-entropy analysis (binary entropy of the marginal voxel-occupancy
+proportion; same voxelization and removal rule as the pilot). It is self-contained:
+code, the released 160-row CSV, the structured JSON, the per-budget summary, and the
+`entropy_budget` figure included in the manuscript.
+
+```bash
+python reproducibility/reproduce_entropy.py \
+  --data-dir experiments/main/data/kitti/training/velodyne \
+  --output-dir /tmp/entropy_check \
+  --compare-csv reproducibility/results/entropy_analysis.csv
+```
+
+With `--compare-csv` the script re-derives every row from the restored frames and
+prints `Comparison mismatches: 0` on success. Note that `budget=0` is the explicit
+no-removal baseline and positive budgets use a quantile threshold, so with tied
+scores the *actual* removal can exceed the nominal budget — this is stated in the
+package README's evidence-limits section and should be quoted as-is.
+
 ---
 
 ## 4. Verifying against the published numbers

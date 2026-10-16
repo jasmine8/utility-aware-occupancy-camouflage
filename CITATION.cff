@@ -6,16 +6,17 @@ abstract: >-
   camouflage: a deterministic, gradient-free sender-side defense that removes the
   lowest-utility fraction of occupied voxels in order to degrade an
   occupancy-based point-cloud reconstruction path. Released artifacts cover a fixed
-  16-frame KITTI Velodyne subset across nine removal budgets.
+  16-frame KITTI Velodyne subset across nine removal budgets. A journal-independent
+  package additionally reproduces the manuscript's occupancy-entropy analysis across
+  ten removal budgets, including the released figure and tables.
 type: software
-version: "1.0.2"
-date-released: "2026-10-12"
+version: "1.0.3"
+date-released: "2026-10-16"
 license: MIT
 repository-code: "https://github.com/jasmine8/utility-aware-occupancy-camouflage"
 # `doi` is the Zenodo *concept* DOI: it always resolves to the newest archived
 # version, so it stays correct no matter which release a reader lands on.
-# Version-specific DOIs: v1.0.1 = 10.5281/zenodo.23320736; v1.0.2 is minted on
-# publication of the release and is linked from the concept DOI record.
+# Version-specific DOIs are minted per release and linked from the concept record.
 doi: "10.5281/zenodo.23320735"
 keywords:
   - point clouds

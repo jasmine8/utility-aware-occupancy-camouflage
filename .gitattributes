@@ -15,3 +15,7 @@
 *.yml   text eol=lf
 *.txt   text eol=lf
 License text=lf
+
+# Reproducibility package — keep byte-identical to the submitted ZIP (md5-recorded);
+# its CSVs ship with CRLF and reviewers may diff them against this archive.
+reproducibility/results/*.csv -text

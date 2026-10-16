@@ -49,6 +49,7 @@ form, select *"Data available in a publicly accessible repository"* and add the
 | Operating-point selection record | `experiments/main/results/removal_rate_sweep/summary.json` |
 | Baseline + random-jitter comparison | `experiments/main/results/occupancy_pilot.json`, `occupancy_rate_sweep.json` |
 | Frame manifest (byte ranges) + fetch script | `data/kitti_velodyne_subset_manifest.json`, `experiments/main/fetch_kitti_subset_from_manifest.py` |
+| Occupancy-entropy reproducibility package (code + 10-budget × 16-frame entropy data + the manuscript's entropy figure) | `reproducibility/` |
 | All figures and tables | `paper/figures/`, `paper/tables/` |
 | Checkpoint audit | `experiments/main/artifacts/checkpoint_route_audit.json` |
 
